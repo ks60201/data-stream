@@ -11,8 +11,8 @@ def main():
             .config("spark.jars.packages",
                     "org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0,"
                     "org.apache.hadoop:hadoop-aws:3.3.1") \
-            .config("spark.hadoop.fs.s3a.access.key", "AKIA6D6JBREVLFVSBYAB") \
-            .config("spark.hadoop.fs.s3a.secret.key", "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") \
+            .config("spark.hadoop.fs.s3a.access.key", "*") \
+            .config("spark.hadoop.fs.s3a.secret.key", "*") \
             .config("spark.hadoop.fs.s3a.endpoint", "s3.amazonaws.com") \
             .config("spark.hadoop.fs.s3a.path.style.access", "true") \
             .getOrCreate()
